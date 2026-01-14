@@ -7,7 +7,7 @@ from io import BytesIO
 # --- 1. 頁面設定 ---
 st.set_page_config(page_title="單機版去背神器 (疊加版)", layout="wide")
 st.title("🎨 Vibe Coding: 紅框與綠筆同時存在 (本地端)")
-
+st.write(f"🔍 目前 Streamlit 版本: {st.__version__}")
 # --- 2. 上傳圖片 ---
 uploaded_file = st.file_uploader("請上傳圖片 (JPG/PNG)", type=["png", "jpg", "jpeg"])
 
@@ -106,3 +106,4 @@ if uploaded_file:
 
         else:
             st.info("👈 請在左側開始操作")
+
